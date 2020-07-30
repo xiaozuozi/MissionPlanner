@@ -1,5 +1,6 @@
 ﻿
 using System.Drawing.Text;
+using System.Windows.Forms;
 using ExifLibrary;
 using MissionPlanner.Utilities;
 using OpenTK.Graphics;
@@ -40,7 +41,7 @@ namespace GMap.NET.WindowsForms
     /// <summary>
     /// GMap.NET control for Windows Forms
     /// </summary>   
-    public partial class GMapControl : UserControl, Interface, IControl
+    public partial class GMapControl : MySKCanvasView, Interface, IControl
    {
 #if !PocketPC
       /// <summary>
@@ -2437,8 +2438,6 @@ namespace GMap.NET.WindowsForms
          return Core.FromLocalToLatLng(x, y);
       }
 
-
- 
 
       /// <summary>
       /// gets local coordinate from world coordinate

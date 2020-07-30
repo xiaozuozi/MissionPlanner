@@ -21,6 +21,10 @@ namespace System.Drawing
             set { _skBitmap = value; }
         }
 
+        public SKImage ToSKImage()
+        {
+            return SKImage.FromBitmap(nativeSkBitmap);
+        }
 
         public int Width
         {

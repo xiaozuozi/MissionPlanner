@@ -19,6 +19,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controls\Cursors.cs" />
+    <Compile Remove="Controls\MouseEventArgs.cs" />
+    <Compile Remove="Controls\PaintEventArgs.cs" />
+    <Compile Remove="Linked\Control.cs" />
+    <Compile Remove="Linked\UserControl.cs" />
     <Compile Remove="RTSP\Properties\AssemblyInfo.cs" />
   </ItemGroup>
 
@@ -50,6 +55,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Controls\Cursors.cs" />
+    <None Include="Controls\MouseEventArgs.cs" />
+    <None Include="Controls\PaintEventArgs.cs" />
+    <None Include="Linked\Control.cs" />
+    <None Include="Linked\UserControl.cs" />
     <None Include="RTSP\Properties\AssemblyInfo.cs" />
   </ItemGroup>
 
@@ -69,6 +79,7 @@
     <ProjectReference Include="..\..\MissionPlanner.Drawing\MissionPlanner.Drawing.csproj">
       <Aliases></Aliases>
     </ProjectReference>
+    <ProjectReference Include="..\..\mono\mcs\class\System.Windows.Forms\System.Windows.Forms-net_4_x.csproj" />
     <ProjectReference Include="..\..\px4uploader\px4uploader.csproj" />
     <ProjectReference Include="..\..\Strings\MissionPlanner.Strings.csproj" />
     <ProjectReference Include="..\..\Utilities\MissionPlanner.Utilities.csproj" />
@@ -112,11 +123,7 @@
       <LastGenOutput>HUDT.Designer.cs</LastGenOutput>
     </EmbeddedResource>
    
-    <EmbeddedResource Update="GCSViews\Firmware.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-   
-    <EmbeddedResource Update="GCSViews\Video.xaml">
+    <EmbeddedResource Update="GCSViews\WinForms.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="MasterDetailPage1Detail.xaml">

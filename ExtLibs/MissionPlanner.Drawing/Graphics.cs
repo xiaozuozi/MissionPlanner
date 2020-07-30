@@ -316,7 +316,7 @@ GRBackendRenderTargetDesc backendRenderTargetDescription = new GRBackendRenderTa
 
         public void DrawIcon(Icon icon, Rectangle targetRect)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public void DrawIconUnstretched(Icon icon, Rectangle targetRect)
