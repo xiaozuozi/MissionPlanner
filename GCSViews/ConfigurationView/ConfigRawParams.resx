@@ -124,7 +124,7 @@
   <data name="BUT_compare.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  
   <data name="BUT_compare.Location" type="System.Drawing.Point, System.Drawing">
     <value>631, 119</value>
   </data>
@@ -276,7 +276,7 @@
   <data name="&gt;&gt;BUT_load.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>17, 17</value>
   </metadata>
   <data name="label1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
