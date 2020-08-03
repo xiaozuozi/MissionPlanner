@@ -1,7 +1,8 @@
 ﻿using System;
 
 namespace System.Drawing.Imaging
-{
+{// System.Drawing.Imaging.EmfPlusRecordType
+
     public class BitmapData
     {
         public IntPtr Scan0 { get; set; }

@@ -515,7 +515,8 @@ GRBackendRenderTargetDesc backendRenderTargetDescription = new GRBackendRenderTa
             GraphicsUnit srcUnit,
             ImageAttributes imageAttr)
         {
-            throw new NotImplementedException();
+            DrawImageUnscaled(image, destRect.X, destRect.Y);
+            //throw new NotImplementedException();
         }
 
         public void DrawImage(Image img, long i, long i1, long width, long height)
@@ -1472,12 +1473,14 @@ GRBackendRenderTargetDesc backendRenderTargetDescription = new GRBackendRenderTa
 
         public void Restore(GraphicsState gstate)
         {
-            throw new NotImplementedException();
+            Transform = gstate.Matrix;
+            //throw new NotImplementedException();
         }
 
         public GraphicsState Save()
         {
-            throw new NotImplementedException();
+            return new GraphicsState() {Matrix = Transform};
+            //throw new NotImplementedException();
         }
 
         public static Func<IntPtr, Graphics> HwndToGraphics;

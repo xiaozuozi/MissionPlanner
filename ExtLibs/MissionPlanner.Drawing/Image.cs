@@ -65,6 +65,10 @@ namespace System.Drawing
             set { userData = value; }
         }
 
+        public int VerticalResolution = 72;
+
+        public int HorizontalResolution = 72;
+
 
         public static Image FromFile(string filename)
         {

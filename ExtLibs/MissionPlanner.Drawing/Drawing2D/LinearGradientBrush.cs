@@ -22,5 +22,21 @@ namespace System.Drawing.Drawing2D
 
         public RectangleF Rectangle { get; set; }
         public Color[] LinearColors { get; set; }
+
+        public WrapMode WrapMode
+        {
+            get;set;
+        }
+        public ColorBlend InterpolationColors { get; set; }
+
+        public void ScaleTransform(float rectangleWidth, float rectangleHeight, MatrixOrder append)
+        {
+            
+        }
+
+        public void TranslateTransform(float rectangleLeft, float rectangleTop, MatrixOrder append)
+        {
+            
+        }
     }
 }

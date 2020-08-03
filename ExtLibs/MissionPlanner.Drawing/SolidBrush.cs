@@ -45,5 +45,9 @@ namespace System.Drawing
                 }
             }
         }
+        public Brush Clone()
+        {
+            return new SolidBrush() { nativeBrush = nativeBrush?.Clone() };
+        }
     }
 }
