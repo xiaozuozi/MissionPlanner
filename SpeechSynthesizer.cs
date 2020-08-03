@@ -1,7 +1,35 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Forms;
 
+namespace System.Windows.Forms
+{
+    public class WebBrowser : Control
+    {
+        public event EventHandler<WebBrowserNavigatingEventArgs> Navigating;
+        public event EventHandler<WebBrowserNavigatedEventArgs> Navigated;
+
+        public void Navigate(Uri authorizeUri)
+        {
+            
+        }
+    }
+
+    public class WebBrowserNavigatedEventArgs : EventArgs
+    {
+        public Uri Url;
+    }
+
+    public class WebBrowserNavigatingEventArgs : EventArgs
+    {
+        public Uri Url;
+
+        public bool Cancel;
+    }
+}
+/*
 namespace OSGeo.GDAL
 {
     public class Gdal
@@ -59,7 +87,7 @@ namespace OSGeo.OGR
             throw new NotImplementedException();
         }
     }
-}
+}*/
 namespace System.Speech.Synthesis
 {
     public class SpeechSynthesizer
@@ -86,5 +114,38 @@ namespace System.Speech.Synthesis
     {
         Ready,
         Speaking
+    }
+}
+
+namespace System.Management
+{
+    public class ObjectQuery
+    {
+        private string v;
+
+        public ObjectQuery(string v)
+        {
+            this.v = v;
+        }
+    }
+
+    public class ManagementObjectSearcher
+    {
+        private ObjectQuery query;
+
+        public ManagementObjectSearcher(ObjectQuery query)
+        {
+            this.query = query;
+        }
+
+        public IEnumerable<ManagementObject> Get()
+        {
+            return new List<ManagementObject>();
+        }
+    }
+
+    public class ManagementObject
+    {
+        public Dictionary<string, KeyValuePair<string,string>> Properties = new Dictionary<string, KeyValuePair<string, string>>();
     }
 }

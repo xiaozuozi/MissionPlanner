@@ -198,5 +198,10 @@ namespace System.Drawing
         {
             
         }
+
+        public void Save(MemoryStream streamjpg, ImageCodecInfo ici, EncoderParameters eps)
+        {
+            Save(streamjpg, SKEncodedImageFormat.Jpeg);
+        }
     }
 }

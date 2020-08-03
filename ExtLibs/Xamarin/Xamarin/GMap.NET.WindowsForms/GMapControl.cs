@@ -1,14 +1,14 @@
 ﻿
+using System.Drawing.Drawing2D;
 using System.Drawing.Text;
 using System.Windows.Forms;
 using ExifLibrary;
-using MissionPlanner.Utilities;
 using OpenTK.Graphics;
 using OpenTK.Platform;
 using SkiaSharp;
 using Xamarin.Controls;
 using Color = System.Drawing.Color;
-
+using Matrix = MissionPlanner.Utilities.Matrix;
 using Rectangle = System.Drawing.Rectangle;
 using PointF = System.Drawing.PointF;
 using RectangleF = System.Drawing.RectangleF;
@@ -34,6 +34,7 @@ namespace GMap.NET.WindowsForms
     using System.Runtime.Serialization.Formatters.Binary;
     using GMap.NET.Projections;
     using System.Linq;
+    using System.Drawing.Imaging;
 #else
    
 #endif

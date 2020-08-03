@@ -29,6 +29,8 @@ namespace System.Drawing.Drawing2D
         }
         public ColorBlend InterpolationColors { get; set; }
 
+        public Blend Blend { get; set; }
+
         public void ScaleTransform(float rectangleWidth, float rectangleHeight, MatrixOrder append)
         {
             
