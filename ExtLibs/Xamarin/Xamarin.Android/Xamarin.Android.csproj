@@ -149,6 +149,10 @@
       <Project>{fd4d2994-9bea-41a1-8c51-2e02d1e8503e}</Project>
       <Name>Interfaces</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\MissionPlanner.Drawing\MissionPlanner.Drawing.csproj">
+      <Project>{6974d22c-ede6-4bb2-aad2-ff23ed6ec165}</Project>
+      <Name>MissionPlanner.Drawing</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\UsbSerialForAndroid\UsbSerialForAndroid.csproj">
       <Project>{B57854C8-5C63-4D79-96ED-ACD31815CB91}</Project>
       <Name>UsbSerialForAndroid</Name>

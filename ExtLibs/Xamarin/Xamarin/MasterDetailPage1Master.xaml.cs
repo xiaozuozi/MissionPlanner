@@ -13,7 +13,7 @@ using Xamarin.GCSViews;
 
 namespace Xamarin
 {
-    [XamlCompilation(XamlCompilationOptions.Skip)]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MasterDetailPage1Master : ContentPage
     {
         public ListView ListView;
