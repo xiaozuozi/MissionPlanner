@@ -2,3 +2,6 @@
 	path = ExtLibs/mono
 	url = https://github.com/meee1/mono.git
 	branch = master2
+[submodule "ExtLibs/runtime"]
+	path = ExtLibs/runtime
+	url = git@github.com:dotnet/runtime.git
